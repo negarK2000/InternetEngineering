@@ -1,0 +1,90 @@
+/*context container - adjusting size and location of main box
+ containing main context from home page - the transparent box
+ the child divs will float along side each other*/
+.main_content {
+    width:60%;
+    margin:auto;
+    overflow:hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 3px dodgerblue solid;
+    border-radius: 20px;
+    background-color: darkblue;
+    opacity: 0.5;
+    padding: 5px 10px;
+
+    display: -webkit-flex;
+    display: flex;
+}
+
+/*title's format for the pages*/
+.page_title {
+    color: white;
+    font: bolder 30px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*changing color when hovering over the links or buttons*/
+.starships_list ul li:hover, Button:hover{
+    color: crimson;
+}
+
+/*button's format for each starship's link in the second page*/
+.starships_list ul {
+    color: deepskyblue;
+    background-color: darkblue;
+    font: bold 20px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    margin-bottom: 5px;
+}
+
+/*button's format for the navigator buttons*/
+.button {
+    height: 20;
+    display: inline;
+
+    background-color: deepskyblue;
+    font: bold 13px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    color: darkblue;
+    padding: 4px 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/*left child tag of sub_content div - adjusting the position of the div (width and height)*/
+.starships_list {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/*list of startships of a movie - adjusting the position and styling it*/
+.starships_list ul{
+    margin-bottom: 5%;
+    padding-right: 10px;
+    list-style: none;
+}
+
+/*right child tag of sub_content div - adjusting the position and sizing of it
+it is in hide mode at the beginning*/
+.starship_properties_list {
+    padding-left: 15px;
+    /* display: none; */
+    min-width: 50%;
+    padding-right: 5px;
+
+    opacity: initial;
+    color: white;
+    font: bold 19px "Didot", "Candara", "Arial";
+}
+
+/*adjusting the position of the starships property headers*/
+.starship_properties_list h3, h4{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}

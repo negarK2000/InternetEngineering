@@ -1,0 +1,56 @@
+.main_content {
+    width:55%;
+    margin:auto;
+    overflow:hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 3px crimson solid;
+    border-radius: 20px;
+    background-color: darkblue;
+    opacity: 0.5;
+    padding: 5px 10px;
+
+    display: -webkit-flex;
+    display: flex;
+
+    color: white;
+    font: normal 19px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+}
+
+.button {
+    margin-left: 5%;
+    display: inline;
+
+    background-color: darkred;
+    font: bold 13px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    color: white;
+    padding: 5px 3px;
+    border-radius: 15px;
+}
+
+.page_title {
+    color: white;
+    font: bolder 30px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.movie_list {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.movie_list li Button:hover{
+    color: crimson;
+}
+
+.movie_list li {
+    list-style-image: url('./../../images/icon.png');
+    margin-left: 5%;
+}
+
