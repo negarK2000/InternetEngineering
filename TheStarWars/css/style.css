@@ -1,0 +1,176 @@
+/*resetting everything*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*setting background image for home page and making it responsive*/
+#background_image {
+    background-image: url("../images/main_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+/*context container - adjusting size and location of main box*/
+.container {
+    width:60%;
+    margin:auto;
+    overflow:hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*containing main context from home page - the transparent box
+ buttons and movie list are side by side*/
+#main_content {
+    border: 3px crimson solid;
+    border-radius: 20px;
+    background-color: darkblue;
+    opacity: 0.5;
+    padding: 5px 10px;
+
+    display: -webkit-flex;
+    display: flex;
+
+    color: white;
+    font: normal 19px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+}
+
+/*title's format for the pages*/
+.page_title {
+    color: white;
+    font: bolder 30px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*list of movies - floating items in it with flex*/
+#movie_list {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/*buttons for starships - putting a little space at the top*/
+#Starships_buttons{
+    margin-top: 5.5%;
+}
+
+/*changing color when hovering over the links or buttons*/
+#starships_list input:hover , #Starships_buttons input:hover, #starships_list ul input[type=submit]:hover{
+    color: crimson;
+}
+
+/*changing color when clicking the links or buttons*/
+#starships_list input:active , #Starships_buttons input:active, #starships_list ul input[type=submit]:active{
+    color: rebeccapurple;
+}
+
+/*setting an image as the bullet points of hte unordered movie list*/
+#movie_list ul {
+    list-style-image: url('../images/icon.png');
+}
+
+/*putting distance between items of the list*/
+#movie_list li {
+    margin: 6px 6px 6px 35px;
+}
+
+/*button's format for the starships buttons*/
+#Starships_buttons input{
+    background-color: darkblue;
+    font: bold 13px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    color: white;
+    padding: 5px 3px;
+    border-radius: 15px;
+}
+
+/*adjusting the distance between buttons*/
+.button {
+    height: 17.5%;
+    display: block;
+}
+
+/*setting background image for starships page and making it responsive*/
+#starship_background_image {
+    background-image: url("../images/starships_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+
+    display: none;
+}
+
+/*containing main context from home page - the transparent box
+ the child divs will float along side each other*/
+#sub_content {
+    border: 3px dodgerblue solid;
+    border-radius: 20px;
+    background-color: darkblue;
+    opacity: 0.5;
+    padding: 5px 10px;
+
+    display: -webkit-flex;
+    display: flex;
+}
+
+/*button's format for each starship's link in the second page*/
+#starships_list ul input[type=submit] {
+    color: deepskyblue;
+    background-color: darkblue;
+    font: bold 20px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    border: none;
+}
+
+/*font format for starships properties*/
+.subFont {
+    opacity: initial;
+    color: white;
+    font: bold 19px "Didot", "Candara", "Arial";
+}
+
+/*button's format for the navigator buttons*/
+.nav_button input {
+    background-color: deepskyblue;
+    font: bold 13px "Copperplate Gothic", "Dejavu Sans", "Times New Roman";
+    color: darkblue;
+    padding: 3px 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/*left child tag of sub_content div - adjusting the position of the div (width and height)*/
+#starships_list {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+/*list of startships of a movie - adjusting the position and styling it*/
+#starships_list ul{
+    margin-bottom: 5%;
+    padding-right: 10px;
+    list-style: none;
+}
+
+/*right child tag of sub_content div - adjusting the position and sizing of it
+it is in hide mode at the beginning*/
+#starship_properties_list {
+    padding-left: 15px;
+    display: none;
+    min-width: 50%;
+    padding-right: 5px;
+}
+
+/*adjusting the position of the starships property headers*/
+#starship_properties_list h3, h4{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
